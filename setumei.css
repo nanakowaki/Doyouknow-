@@ -1,0 +1,114 @@
+ul{
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+  }
+  ul li{
+  display: table-cell;
+  min-width: 50px;
+  }
+  ul li a{
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  }
+  ul li.current{
+  background-color: #B0E0E6;
+  }
+  ul li.current a{
+  color: #555;
+  }
+  ul li:hover{
+  background-color: #4db4d0;
+  }
+nav {
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+figure.rogo{
+  display: inline-block;
+}
+p.Doyouknowtoha{
+  display: inline-block;
+  width:300px;
+  margin-left: 5px;
+  vertical-align: 63px;
+}
+.Doyouknowtoha{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+h1.saisyo{
+  padding: 0.25em 3.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  font-size: 25px;
+  width: 300px;
+  position: relative;
+}
+h1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 65px; /* ここで位置を調整 */
+  height: 100%;
+  width: 10px;
+  background-color: #00BCD4; /* 四角形の色 */
+}
+div.bun{
+  position: relative;
+  left: 90px;
+}
+p{
+  line-height: 40px;
+}
+h1.saigaimode{
+  padding: 0.25em 3.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  font-size: 25px;
+  width: 300px;
+  position: relative;
+}
+h1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 65px; /* ここで位置を調整 */
+  height: 100%;
+  width: 10px;
+  background-color: #00BCD4; /* 四角形の色 */
+}
+div.bunsyo{
+  position: relative;
+  left: 90px;
+}
+div.bunsyoo{
+  position: relative;
+  left: 90px;
+}
+h1.odekakemode{
+  padding: 0.25em 3.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  font-size: 25px;
+  width: 300px;
+  position: relative;
+}
+h1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 65px; /* ここで位置を調整 */
+  height: 100%;
+  width: 10px;
+  background-color: #00BCD4; /* 四角形の色 */
+}
+
+
+
+
+

@@ -1,0 +1,72 @@
+
+ul{
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+  }
+  ul li{
+  display: table-cell;
+  min-width: 50px;
+  }
+  ul li a{
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  }
+  ul li.current{
+  background-color: #B0E0E6;
+  }
+  ul li.current a{
+  color: #555;
+  }
+  ul li:hover{
+  background-color: #4db4d0;
+  }
+nav {
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+ 
+figure.rogo{
+  display: inline-block;
+}
+p.disaster{
+  display: inline-block;
+  width:300px;
+  margin-left: 5px;
+  vertical-align: 63px;
+}
+.disaster{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.select {
+  position: relative;
+  right: 580px;
+  display: inline-block;
+  margin-bottom: 20px; 
+  border: 1px solid #000;
+}
+.select select {
+  appearance: none;
+  width: 300px;
+  padding: 11px 15px;
+  border: none;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
+}
+#map {
+  margin-top: 20px; 
+  width: 100%;
+  height: 500px;
+  border: none;
+  display: none; /* 初期状態で非表示 */
+}

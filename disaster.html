@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>disaster mode</title>
+  <link rel="stylesheet" href="disaster.css">
+  <script type="text/javascript" src="disaster.js"></script>
+
+</head>
+<body>
+ 
+  <nav>
+    <ul>
+      <li><a href="Doyouknow.html">TOP</a></li>
+      <li><a href="setumei.html">Do you know?</a></li>
+      <li><a href="disaster.html">災害モード</a></li>
+      <li><a href="odekake.html">おでかけモード</a></li>
+    </ul>
+    </nav>
+    
+    <figure class="rogo"><img src="無題132_20241204103944.png"width="250px"></figure>
+    <p class="disaster">災害モード</p>
+
+    <!-- <style>
+      #map {
+          width: 100%;
+          height: 500px;
+          border: none;
+          position: fixed;
+      }
+  </style>
+
+<div class="select">
+  <select id="region">
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.6094997652544!2d139.4903686441102!3d35.91305422411355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018daf9d77c7815%3A0xbcfc8c1d49298cb2!2z5bed6LaK5biC56uL5bed6LaK56ys5LiA5Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733377881780!5m2!1sja!2sjp
+    ">本庁地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.0340504060678!2d139.5081100755381!3d35.94613697250291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018daa10e170311%3A0x5665fb66c71a31f8!2z5bed6LaK5biC56uL6Iqz6YeO5Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733379559302!5m2!1sja!2sjp">芳野地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4525.639608506005!2d139.51907548349268!3d35.92852197644193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018dad2a267d621%3A0x7524352d7eed008c!2z5bed6LaK6YGL5YuV5YWs5ZyS57eP5ZCI5L2T6IKy6aSo!5e0!3m2!1sja!2sjp!4v1733379712525!5m2!1sja!2sjp">古谷地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1616.2500832556261!2d139.52913641052336!3d35.88576399542486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c4aafa813c39%3A0xf8521037defb32d0!2z5Z-O5YyX5Z-8546J5Lit5a2m44O76auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733379803360!5m2!1sja!2sjp">南古谷地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1358.490021284733!2d139.49882408889178!3d35.88001338645913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018db6565b146b3%3A0x5abfc6874b2f8e59!2z5bed6LaK5biC56uL6auY6ZqO5Y2X5bCP5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733380119144!5m2!1sja!2sjp" 高階地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.0332520209713!2d139.46978307553456!3d35.872701972526066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018db91651ed269%3A0x59a25e4951e97e5c!2z5bed6LaK5biC56uL56aP5Y6f5bCP5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733380268296!5m2!1sja!2sjp">福原地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.236309658322!2d139.43737367553547!3d35.892227672519915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018d98585089f47%3A0x539bdf3bd509af74!2z5bed6LaK5biC56uL5aSn5p2x6KW_5Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733380345360!5m2!1sja!2sjp">大東地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.4707436527488!2d139.39304277553637!3d35.910975972513945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018d78ff7c67fff%3A0x6e3d6815a70166ee!2z5Z-8546J55yM56uL5bed6LaK6KW_6auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733380626628!5m2!1sja!2sjp">霞ヶ関地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.9711873108613!2d139.41542127553697!3d35.92320527251001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018d76e53a3eac5%3A0x6e436571959ac56c!2z5bed6LaK5biC56uL5bed6LaK6KW_5bCP5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733380750321!5m2!1sja!2sjp">川鶴地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.100493030954!2d139.44474047553675!3d35.92004017251114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018da0194ebf165%3A0xf966f416a05a1044!2z5bed6LaK5biC56uL6Zye44Kx6Zai5p2x5Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733380987888!5m2!1sja!2sjp">">霞ヶ関北地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.579328862186!2d139.44054367553747!3d35.93279557250716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018d74db72599d5%3A0x2d181ec515603f8e!2z5bed6LaK6KW_5paH5YyW5Lya6aSo!5e0!3m2!1sja!2sjp!4v1733380879795!5m2!1sja!2sjp">明細地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.314380982765!2d139.47204972553774!3d35.939278622505086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018d09b80e0f99f%3A0xd466e0585e2f4fd5!2z5bed6LaK5biC56uL5bGx55Sw5Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733381045774!5m2!1sja!2sjp">山田地区</option>
+  </select>
+    <iframe 
+        id="map" 
+        src="" 
+        allowfullscreen 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    
+    <script>
+      document.getElementById("region").addEventListener("change", function() {
+          const mapFrame = document.getElementById("map");
+          mapFrame.src = this.value;
+      });
+      console.log("選択された値:", selectedValue); // デバッグ用
+  if (selectedValue) {
+    mapFrame.src = selectedValue;
+    mapFrame.style.display = "block";
+    console.log("地図を表示:", selectedValue);
+  } else {
+    mapFrame.src = "";
+    mapFrame.style.display = "none";
+    console.log("地図を非表示");
+  };
+      
+  </script>
+  
+  </div>
+</body>
+</html> -->
+
+</head>
+<body>
+    <div class="select">
+        <select id="region">
+           <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.6094997652544!2d139.4903686441102!3d35.91305422411355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018daf9d77c7815%3A0xbcfc8c1d49298cb2!2z5bed6LaK5biC56uL5bed6LaK56ys5LiA5Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733377881780!5m2!1sja!2sjp
+    ">本庁地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.0340504060678!2d139.5081100755381!3d35.94613697250291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018daa10e170311%3A0x5665fb66c71a31f8!2z5bed6LaK5biC56uL6Iqz6YeO5Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733379559302!5m2!1sja!2sjp">芳野地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4525.639608506005!2d139.51907548349268!3d35.92852197644193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018dad2a267d621%3A0x7524352d7eed008c!2z5bed6LaK6YGL5YuV5YWs5ZyS57eP5ZCI5L2T6IKy6aSo!5e0!3m2!1sja!2sjp!4v1733379712525!5m2!1sja!2sjp">古谷地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1616.2500832556261!2d139.52913641052336!3d35.88576399542486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c4aafa813c39%3A0xf8521037defb32d0!2z5Z-O5YyX5Z-8546J5Lit5a2m44O76auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733379803360!5m2!1sja!2sjp">南古谷地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1358.490021284733!2d139.49882408889178!3d35.88001338645913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018db6565b146b3%3A0x5abfc6874b2f8e59!2z5bed6LaK5biC56uL6auY6ZqO5Y2X5bCP5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733380119144!5m2!1sja!2sjp"> 高階地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.0332520209713!2d139.46978307553456!3d35.872701972526066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018db91651ed269%3A0x59a25e4951e97e5c!2z5bed6LaK5biC56uL56aP5Y6f5bCP5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733380268296!5m2!1sja!2sjp">福原地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.236309658322!2d139.43737367553547!3d35.892227672519915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018d98585089f47%3A0x539bdf3bd509af74!2z5bed6LaK5biC56uL5aSn5p2x6KW_5Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733380345360!5m2!1sja!2sjp">大東地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.4707436527488!2d139.39304277553637!3d35.910975972513945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018d78ff7c67fff%3A0x6e3d6815a70166ee!2z5Z-8546J55yM56uL5bed6LaK6KW_6auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733380626628!5m2!1sja!2sjp">霞ヶ関地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.9711873108613!2d139.41542127553697!3d35.92320527251001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018d76e53a3eac5%3A0x6e436571959ac56c!2z5bed6LaK5biC56uL5bed6LaK6KW_5bCP5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733380750321!5m2!1sja!2sjp">川鶴地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.100493030954!2d139.44474047553675!3d35.92004017251114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018da0194ebf165%3A0xf966f416a05a1044!2z5bed6LaK5biC56uL6Zye44Kx6Zai5p2x5Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733380987888!5m2!1sja!2sjp">霞ヶ関北地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.579328862186!2d139.44054367553747!3d35.93279557250716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018d74db72599d5%3A0x2d181ec515603f8e!2z5bed6LaK6KW_5paH5YyW5Lya6aSo!5e0!3m2!1sja!2sjp!4v1733380879795!5m2!1sja!2sjp">明細地区</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.314380982765!2d139.47204972553774!3d35.939278622505086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018d09b80e0f99f%3A0xd466e0585e2f4fd5!2z5bed6LaK5biC56uL5bGx55Sw5Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1733381045774!5m2!1sja!2sjp">山田地区</option>
+            <!-- 他のオプションを続ける -->
+        </select>
+    </div>
+    <iframe 
+        id="map" 
+        src="" 
+        allowfullscreen 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <script>
+        document.getElementById("region").addEventListener("change", function () {
+            const mapFrame = document.getElementById("map");
+            const selectedValue = this.value;
+
+            if (selectedValue) {
+                mapFrame.src = selectedValue;
+                mapFrame.style.display = "block";
+                console.log("地図を表示:", selectedValue);
+            } else {
+                mapFrame.src = "";
+                mapFrame.style.display = "none";
+                console.log("地図を非表示");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+ul{
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+  }
+  ul li{
+  display: table-cell;
+  min-width: 50px;
+  }
+  ul li a{
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  }
+  ul li.current{
+  background-color: #B0E0E6;
+  }
+  ul li.current a{
+  color: #555;
+  }
+  ul li:hover{
+  background-color: #4db4d0;
+  }
+nav {
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+.relative{
+  position:relative;
+}
+.absolute{
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+.title{
+  font-size: 120px;
+  font-family:Helvetica;
+  color: #000000;
+  text-align: center;
+}
+
+
+
+
